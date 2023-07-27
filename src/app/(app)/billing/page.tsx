@@ -65,7 +65,7 @@ export default async function BillingPage() {
       {/* Greetings */}
       <div className="mt-16 flex items-center justify-between">
         <h1 className="h4">
-          Hello <span className="text-crimson-9">{user?.name}</span>
+          Hello <span className="text-orange-9">{user?.name}</span>
         </h1>
         <div className="flex items-center gap-3">
           <p className="text-slate-11">Powered by</p>
@@ -179,7 +179,7 @@ export default async function BillingPage() {
               className={clsx(
                 "flex h-[353px] flex-col gap-8 rounded-lg bg-slate-2 px-6 py-12",
                 plan.planId === currentPlan.planId
-                  ? "border-[3px] border-crimson-6"
+                  ? "border-orange-6 border-[3px]"
                   : ""
               )}
             >
@@ -203,7 +203,7 @@ export default async function BillingPage() {
                 <Button
                   variant="secondary"
                   disabled={true}
-                  className="w-[256px] hover:bg-crimson-3"
+                  className="hover:bg-orange-3 w-[256px]"
                 >
                   Current plan
                 </Button>
@@ -218,7 +218,7 @@ export default async function BillingPage() {
                       className={clsx(
                         "h-6 w-6 ",
                         plan.planId === currentPlan.planId
-                          ? "stroke-crimson-9"
+                          ? "stroke-orange-9"
                           : "stroke-slate-11"
                       )}
                     />

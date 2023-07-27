@@ -21,8 +21,8 @@ export default async function PricingPage() {
           Easy & flexible pricing
         </h1>
         <p className="body-xl w-full px-4 text-center text-slate-11 md:w-[572px] md:px-0">
-          Whatever plan you choose, know that our AI will generate the best
-          marketing copy.
+          Whatever plan you choose, we'll be here to accelerate your
+          development.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default async function PricingPage() {
               key={planIndex}
               className={clsx(
                 "flex h-[353px] flex-col gap-8 rounded-lg bg-slate-2 px-6 py-12",
-                plan.promoted === true ? "border-[3px] border-crimson-6" : ""
+                plan.promoted === true ? "border-[3px] border-orange-6" : ""
               )}
             >
               <div className="flex flex-col gap-2">
@@ -65,7 +65,7 @@ export default async function PricingPage() {
                     <CheckBoxIcon
                       className={clsx(
                         "h-6 w-6 ",
-                        plan.promoted ? "stroke-crimson-9" : "stroke-slate-11"
+                        plan.promoted ? "stroke-orange-9" : "stroke-slate-11"
                       )}
                     />
                     <p className="body text-slate-11">{feature}</p>

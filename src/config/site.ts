@@ -2,13 +2,13 @@ import { SiteConfig } from "@/types";
 import { env } from "@/env.mjs";
 
 export const siteConfig: SiteConfig = {
-  name: "Blip",
+  name: "WiseAI",
   description:
-    "An AI marketing content generation tool, made with Tier, NextJS 13, OpenAI and Vercel Postgres.",
+    "AI Operations Platform for Data Scientists, Data Engineers, and DevOps",
   url: env.NEXT_PUBLIC_APP_URL,
   ogImage: `${env.NEXT_PUBLIC_APP_URL}/og.jpg`,
   links: {
-    twitter: "https://twitter.com/tierrun",
-    github: "https://github.com/tierrun/blip",
+    twitter: "https://twitter.com/artificialwisdomai",
+    github: "https://github.com/artificialwisdomai/origin",
   },
 };

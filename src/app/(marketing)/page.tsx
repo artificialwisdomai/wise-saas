@@ -4,7 +4,7 @@ import { SignUpButton } from "@/components/marketing/LandingSignUp";
 
 export default async function IndexPage() {
   const res = await fetch(
-    "https://api.github.com/repos/tierrun/tier-vercel-openai",
+    "https://api.github.com/repos/artificialwisdomai/wise-saas",
     {
       method: "GET",
       next: { revalidate: 60 },
@@ -29,28 +29,28 @@ export default async function IndexPage() {
       <div className="mt-16 flex flex-col items-center gap-4">
         <div className="flex">
           <Link
-            href="https://github.com/tierrun/tier-vercel-openai"
+            href="https://github.com/artificialwisdomai/wise-saas"
             className="caption-s flex items-center gap-1 rounded-l-[4px] border border-slate-7 bg-slate-3 px-2 py-[2px] font-medium text-slate-12 hover:border-slate-8 hover:bg-slate-4"
           >
             <GitHubIcon className="h-5 w-5 fill-slate-12" />
             <span className="">Star</span>
           </Link>
           <Link
-            href="https://github.com/tierrun/tier-vercel-openai/stargazers"
+            href="https://github.com/artificialwisdomai/wise-saas/stargazers"
             className="group rounded-r-[4px] border-y border-r border-slate-7 px-2 py-[2px] hover:bg-slate-2"
           >
-            <span className="caption-s font-medium text-slate-12 group-hover:text-crimson-9">
+            <span className="caption-s font-medium text-slate-12 group-hover:text-orange-9">
               {data.stargazers_count}
             </span>
           </Link>
         </div>
         <h1 className="md:display h2 w-full px-4 text-center md:w-[802px] md:px-0">
-          Generate the best{" "}
-          <span className="text-crimson-9">marketing copy</span>
+          Simplify your LLM Based{" "}
+          <span className="text-orange-9">AI Analytics</span>
         </h1>
         <p className="body-xl px-4 text-center text-slate-11 md:w-[572px] md:px-0">
-          Put an end to your creative block, get help from your AI creative
-          writer
+          Bypass the complexity of AI Analytics and get the insights you need
+          integrated into your applications via a straightforward API.
         </p>
       </div>
       {/* Hero CTA */}
