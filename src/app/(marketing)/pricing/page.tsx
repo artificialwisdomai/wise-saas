@@ -21,7 +21,7 @@ export default async function PricingPage() {
           Easy & flexible pricing
         </h1>
         <p className="body-xl w-full px-4 text-center text-slate-11 md:w-[572px] md:px-0">
-          Whatever plan you choose, we'll be here to accelerate your
+          Whatever plan you choose, we&apos;ll be here to accelerate your
           development.
         </p>
       </div>
