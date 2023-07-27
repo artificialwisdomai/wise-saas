@@ -58,7 +58,7 @@ export function Generate({ user }) {
       <div className="mt-16 flex flex-col items-center gap-3 lg:flex-row lg:justify-between lg:gap-0">
         <h1 className="h4">
           Hello{" "}
-          <span className="text-crimson-9">{user?.name ? user.name : ""}</span>
+          <span className="text-orange-9">{user?.name ? user.name : ""}</span>
         </h1>
         {user?.limit && usedQuota < user?.limit.limit ? (
           <p>{`${usedQuota}/${user?.limit.limit} copy remaining`}</p>

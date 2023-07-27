@@ -9,7 +9,7 @@ import clsx from "clsx";
 import { signOut } from "next-auth/react";
 
 import { Button } from "@/components/ui/Button";
-import { BlipLogo } from "@/res/logos/BlipLogo";
+import { XertaiLogo } from "@/res/logos/XertaiLogo.tsx";
 
 const navigation = [
   { name: "Generate copy", href: "/generate" },
@@ -34,10 +34,10 @@ export function Header() {
       >
         <div className="flex lg:flex-1">
           <Link href="/generate" className="-m-1.5 p-1.5">
-            <span className="sr-only">Blip</span>
+            <span className="sr-only">WiseAI</span>
             <div className="flex gap-2">
-              <BlipLogo />
-              <span className="body-semibold">Blip</span>
+              <XertaiLogo />
+              <span className="body-semibold">WiseAI</span>
             </div>
           </Link>
         </div>
@@ -58,7 +58,7 @@ export function Header() {
               href={item.href}
               className={clsx(
                 "body  py-3 text-slate-11",
-                pathname === item.href ? "border-b border-crimson-9" : ""
+                pathname === item.href ? "border-b border-orange-9" : ""
               )}
             >
               {item.name}
@@ -81,10 +81,10 @@ export function Header() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-slate-1 p-6 sm:max-w-sm sm:ring-1 sm:ring-slate-6">
           <div className="flex items-center justify-between">
             <Link href="/generate" className="-m-1.5 p-1.5">
-              <span className="sr-only">Blip</span>
+              <span className="sr-only">WiseAI</span>
               <div className="flex gap-2">
-                <BlipLogo />
-                <span className="body-semibold">Blip</span>
+                <XertaiLogo />
+                <span className="body-semibold">WiseAI</span>
               </div>
             </Link>
             <button
