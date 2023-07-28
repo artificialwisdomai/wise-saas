@@ -6,6 +6,6 @@ main example):
 
 https://model.tier.run/clklgjvhn3e6no972sq69xevq
 
-Once the model makes sense, use the "push to Stripe" process to enable the model, or your app will not build!
+Once the model makes sense, use the "push to Stripe" process on the model.tier.run page to enable the model, and update the tierConstants doc to support.
 
-
+If you don't update the doc and push to Stripe, (at least initially) your app will not deploy properly.
